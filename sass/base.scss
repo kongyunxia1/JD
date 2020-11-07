@@ -1,0 +1,90 @@
+$width: 100%;
+$bgColor:#cecece;
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+body {
+    background-color: $bgColor;
+}
+
+#header_wrap {
+    width: $width;
+    background-color: white;
+}
+
+#header {
+    width: 990px;
+    height: 178px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+#footer_wrap {
+    width: $width;
+    background-color: white;
+}
+
+#footer {
+    width: 990px;
+    margin: 0 auto;
+    height: 153px;
+    background-color: green;
+}

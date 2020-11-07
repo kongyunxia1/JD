@@ -1,0 +1,104 @@
+#banner_wrap {
+    width: 100%;
+}
+
+#banner {
+    width: 990px;
+    height: 475px;
+    background-color: orchid;
+    background: url(../img/login1.jpg);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner .login_box {
+    width: 346px;
+    height: 436px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+}
+
+@mixin yangshi {
+    width: 173px;
+    height: 54px;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    position: absolute;
+    background: #fff;
+    display: block;
+}
+
+.login_box {
+    p {
+        width: 436px;
+        height: 18px;
+        line-height: 18px;
+        background-color: oldlace;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .login_upone {
+        width: 346px;
+        height: 54px;
+        line-height: 54px;
+        border-bottom: 1px solid #cececec;
+        .log_left {
+            @include yangshi;
+            left: 0;
+        }
+        .log_rig {
+            @include yangshi;
+            right: 0;
+        }
+    }
+    div {
+        width: 306px;
+        height: 168px;
+        /* margin-top: 40px;
+        margin-left: 20px; */
+        img {
+            width: 147px;
+            height: 147px;
+            margin: 10px auto;
+        }
+    }
+    ul {
+        color: #666;
+        width: 257px;
+        height: 18px;
+        margin-top: 130px;
+        li {
+            span {
+                margin-left: 60px;
+            }
+        }
+        li {
+            a {
+                color: red;
+                margin-right: 20px;
+            }
+        }
+        li {
+            float: left;
+        }
+    }
+    div {
+        color: #666;
+        width: 306px;
+        height: 24px;
+        margin-top: 18px;
+        li {
+            float: left;
+            margin-left: 50px;
+        }
+    }
+    .bott {
+        width: 436px;
+        height: 50px;
+    }
+}
