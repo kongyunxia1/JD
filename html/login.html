@@ -7,69 +7,143 @@
     <title>登录页面</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
     <!-- header -->
     <div id="header_wrap">
         <div id="header">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="../img/logo-201305-b.png" alt="LOGO">
+                </a>
+                <p>欢迎登陆</p>
+            </h1>
+            <span>
+                <a href="https://surveys.jd.com/index.php?r=survey/index/sid/568245/lang/zh-Hans" target="_blank">
+                    登陆页面，调查问卷
+                </a>
+            </span>
+        </div>
+    </div>
 
+    <!-- 提示部分 -->
+    <div id="tip_wrap">
+        <div id="tip">
+            <i></i>
+            <p>
+                依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版
+                <a href="https://about.jd.com/privacy/">《京东隐私策略》</a> 已上线，将更有利于保护您的个人隐私。
+            </p>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div id="banner_wrap">
+        <div id="banner">
+            <div class="login_form">
+                <div class="tips">
+                    <i class="iconfont"></i>
+                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                </div>
+                <div class="login_lef">
+                    <a>扫码登录</a>
+                    <span>|</span>
+                </div>
+                <!-- 扫码登录页面 -->
+                <div class="malogin">
+                    <div class="ma_img">
+                        <img src="../img/erweima.png" alt="二维码图片">
+                    </div>
+                    <div class="font_login">
+                        <span>打开</span>
+                        <a href="#">手机京东</a>
+                        <b>扫描二维码</b>
+                    </div>
+                    <div class="bot_login">
+                        <ul>
+                            <li><i>1</i><b>免输入</b></li>
+                            <li><i>2</i><b>更快</b></li>
+                            <li><i>3</i><b>更安全</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="login_rig">
+                    <a>账户登录</a>
+                </div>
+                <!-- 账户登录页面 -->
+                <div class="ZH_login">
+                    <div class="one_login">
+                        <label for="">12</label>
+                        <input type="text" value="邮箱/用户名/登录手机">
+                    </div>
+                    <div class="two_login">
+                        <label for="">12</label>
+                        <input type="text" value="密码">
+                    </div>
+                    <div class="mima">
+                        <a href="#">忘记密码</a>
+                    </div>
+                    <div class="login_bott">
+                        <input type="button" value="登&nbsp;&nbsp;&nbsp;&nbsp;录">
+
+                    </div>
+
+
+                </div>
+
+                <!-- 底部 -->
+                <div class="low_login">
+                    <ul>
+                        <li>
+                            <i>1</i>
+                            <a href="#">QQ</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <!-- <span>|</span> -->
+                            <i>2</i>
+                            <a href="#">微信</a>
+                        </li>
+                        <li>
+                            <i>3</i>
+                            <a href="#">立即注册</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 
 
 
-    <!-- banner -->
-    <div id="banner_wrap">
-        <div id="banner">
-            <div class="login_box">
-                <p>京东不会以任何理由要求您转账汇款，谨防诈骗</p>
-                <div class="login_upone">
-                    <span class="log_left">扫码登录</span>
-
-                    <span class="log_rig">账户登录</span>
-                </div>
-
-
-                <!-- 二维码位置 -->
-                <div>
-                    <img src="../img/erweima.png" alt="二维码">
-                </div>
-                <ul>
-                    <li>
-                        <span>打开</span>
-                    </li>
-                    <li>
-                        <a href="#">手机京东</a>
-                    </li>
-                    <li>扫描二维码</li>
-                </ul>
-                <div>
-                    <ol>
-                        <li><i></i>免输入</li>
-                        <li><i></i>更快</li>
-                        <li><i></i>更安全</li>
-                    </ol>
-                </div>
-                <!-- 底部 -->
-                <div>
-
-                </div>
 
 
 
-
-
+    <!-- footer -->
+    <div id="footer_wrap">
+        <div id="footer">
+            <div class="links" style="width: 990px;height: 18px;">
+                <a href="" style="padding-left:80px;">关于我们</a><span>|</span>
+                <a href="">关于我们</a><span>|</span>
+                <a href="">联系我们</a><span>|</span>
+                <a href="">人才招聘</a><span>|</span>
+                <a href="">商家入驻</a><span>|</span>
+                <a href="">广告服务</a><span>|</span>
+                <a href="">手机京东</a><span>|</span>
+                <a href="">友情链接</a><span>|</span>
+                <a href="">销售联盟</a><span>|</span>
+                <a href="">京东社区</a><span>|</span>
+                <a href="">京东公益</a>
+            </div>
+            <div class="copy">
+                Copyright&nbsp;©&nbsp;&nbsp;2004-2020&nbsp;&nbsp;&nbsp;京东JD.com 版权所有
             </div>
         </div>
-
-
-        <!-- footer -->
-        <div id="footer_wrap">
-            <div id="footer">
-
-            </div>
-        </div>
+    </div>
 
 
 </body>
