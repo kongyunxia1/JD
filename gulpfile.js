@@ -10,6 +10,12 @@ gulp.task("html", done => {
         .pipe(connect.reload());
     done();
 })
+gulp.task("iconfont", done => {
+    gulp.src("iconfont/*")
+        .pipe(gulp.dest("dist/iconfont"))
+        .pipe(connect.reload());
+    done();
+})
 gulp.task("css", done => {
     gulp.src("css/*.css")
         .pipe(gulp.dest("dist/css"))
@@ -58,8 +64,9 @@ gulp.task("watch", done => {
     gulp.watch("css/*.css", gulp.series("css"));
     gulp.watch("img/*", gulp.series("img"));
     gulp.watch("js/*.js", gulp.series("js"));
+    gulp.watch("iconfont/*", gulp.series("iconfont"));
     done();
 })
 
-gulp.task("build", gulp.parallel("html", "img", "sass", "css", "js"));
+gulp.task("build", gulp.parallel("html", "img", "sass", "css", "js", "iconfont"));
 gulp.task("default", gulp.series("build", "watch", "server"));

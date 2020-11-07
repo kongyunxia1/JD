@@ -52,13 +52,20 @@ h1 {
 }
 
 #header span {
-    width: 136px;
+    width: 160px;
     height: 18px;
-    font-size: 14px;
-    line-height: 18px;
     float: right;
-    text-align: right;
     margin-top: 30px;
+    i {
+        width: 18px;
+        height: 18px;
+        color: red;
+    }
+    a {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+    }
 }
 
 #header span a:hover {
@@ -69,8 +76,16 @@ h1 {
 /* 提示部分 */
 
 #tip {
+    width: 990px;
     height: 38px;
     background-color: oldlace;
+    /* i {
+        display: block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        border: 1px solid red;
+    } */
     p {
         vertical-align: middle;
         color: #666;
@@ -111,6 +126,12 @@ h1 {
         line-height: 18px;
         padding: 10px 0;
         background-color: oldlace;
+        /* i {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid red;
+        } */
         p {
             vertical-align: middle;
             color: #999;
@@ -132,6 +153,7 @@ h1 {
     position: absolute;
     background: #fff;
     display: block;
+    cursor: pointer;
 }
 
 .login_lef {
@@ -151,15 +173,15 @@ h1 {
     @include style;
     top: 38px;
     right: 0;
+    a {
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 
 /* 扫码登录页面 */
-
-
-/* .malogin {
-    display: none;
-} */
 
 .malogin {
     width: 266px;
@@ -202,7 +224,9 @@ h1 {
     line-height: 18px;
     height: 18px;
     border: 0;
-    padding: 10px 0 10px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
     width: 204px;
     float: left;
     overflow: hidden;
@@ -305,8 +329,8 @@ h1 {
             i {
                 display: inline-block;
                 width: 25px;
-                // height: 25px;
-                border: 1px solid red;
+                height: 25px;
+                font-size: 20px;
             }
             b {
                 width: 25px;
@@ -336,20 +360,40 @@ h1 {
                 display: inline-block;
                 width: 13px;
                 height: 13px;
-                border: 1px solid red;
             }
             a {
                 width: 18px;
                 height: 50px;
                 line-height: 50px;
+                margin-left: 5px;
             }
         }
         li:nth-of-type(1) {
             margin-left: 20px;
+            a {
+                &:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
+            i {
+                color: lightskyblue;
+            }
             span {
                 font-size: 12px;
                 color: #cecece;
                 padding-left: 10px;
+            }
+        }
+        li:nth-of-type(2) {
+            a {
+                &:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
+            i {
+                color: green;
             }
         }
         li:nth-of-type(3) {
@@ -359,6 +403,9 @@ h1 {
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+            i {
+                color: red;
             }
         }
     }
