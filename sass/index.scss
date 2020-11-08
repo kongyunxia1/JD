@@ -1,0 +1,193 @@
+#top_wrap {
+    width: 100%;
+}
+
+#top {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#top {
+    height: 30px;
+    background-color: white;
+    position: relative;
+    .fl {
+        width: 58px;
+        height: 30px;
+        float: left;
+        cursor: pointer;
+        .flist {
+            width: 58px;
+            height: 30px;
+            line-height: 30px;
+            /*  &:hover {
+                color: red;
+            } */
+            i {
+                display: inline-block;
+                width: 14px;
+                height: 15px;
+                border: 1px solid green;
+                margin-left: 5px;
+                color: red;
+            }
+            span {
+                position: absolute;
+                top: 6px;
+                margin-left: 5px;
+                color: #999;
+                width: 24px;
+                height: 15px;
+                line-height: 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@mixin SL {
+    width: 20px;
+    height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin a {
+    color: #999;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+    &:hover {
+        color: red;
+    }
+}
+
+@mixin span {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 9px;
+    color: #999;
+    font-size: 12px;
+}
+
+.fr {
+    width: 693px;
+    height: 30px;
+    float: right;
+    font-size: 12px;
+    li {
+        float: left;
+    }
+    li:nth-of-type(1) {
+        width: 120px;
+        height: 30px;
+        margin-right: 10px;
+        a:nth-of-type(1) {
+            @include a;
+            width: 72px;
+            height: 16px;
+            line-height: 16px;
+            margin-left: 0;
+        }
+        a:nth-of-type(2) {
+            @include SL;
+            @include a;
+            margin-left: 10px;
+            color: red;
+        }
+        span {
+            @include span;
+            margin-left: 10px;
+        }
+    }
+    li:nth-of-type(2) {
+        width: 62px;
+        height: 30px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(3) {
+        width: 77px;
+        height: 30px;
+        margin-left: 10px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+            margin-right: 12px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(4) {
+        width: 62px;
+        height: 30px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(5) {
+        width: 77px;
+        height: 30px;
+        margin-left: 10px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+            color: red;
+            margin-right: 12px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(6) {
+        width: 77px;
+        height: 30px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+            margin-right: 12px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(7) {
+        width: 77px;
+        height: 30px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+            margin-right: 12px;
+        }
+        span {
+            @include span;
+        }
+    }
+    li:nth-of-type(8) {
+        width: 62px;
+        height: 30px;
+        a {
+            @include a;
+            width: 48px;
+            height: 16px;
+        }
+    }
+}
