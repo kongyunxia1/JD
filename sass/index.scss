@@ -249,6 +249,7 @@
     height: 180px;
     border: 1px solid #999;
     background-color: white;
+    // z-index: 99;
     .uliup {
         width: 200px;
         height: 100px;
@@ -324,10 +325,12 @@
     height: 140px;
     background-color: lightcyan;
     line-height: 140px;
+    // overflow: hidden;
     position: relative;
     h1 {
         width: 190px;
         height: 120px;
+        // margin-top: 9px;
         position: absolute;
         top: 9px;
         img {
@@ -336,31 +339,191 @@
         }
     }
     .search {
-        width: 486px;
-        height: 32px;
-        border: 2px solid red;
-        position: absolute;
-        top: 20px;
-        left: 220px;
-        input {
+        width: 990px;
+        height: 60px;
+        // border: 1px solid red;
+        .search_in {
+            width: 490px;
+            height: 34px;
+            border: 2px solid red;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 360px;
-            height: 30px;
-            border: none;
-            color: #999;
-            font-size: 12px;
-            padding-left: 17px;
+            top: 24px;
+            left: 210px;
+            .in {
+                width: 400px;
+                height: 32px;
+                input {
+                    display: inline-block;
+                    width: 370px;
+                    height: 32px;
+                    border: none;
+                    color: #999;
+                    font-size: 12px;
+                    padding-left: 17px;
+                    position: absolute;
+                    top: 0;
+                }
+                i {
+                    display: inline-block;
+                    width: 20px;
+                    height: 34px;
+                    line-height: 34px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background-color: white;
+                    font-size: 20px;
+                    color: #999;
+                    position: absolute;
+                    left: 378px;
+                }
+            }
+            button {
+                width: 75px;
+                height: 34px;
+                background-color: red;
+                border: none;
+                position: absolute;
+                top: 0;
+                left: 415px;
+                i {
+                    width: 20px;
+                    height: 22px;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
         }
-        button {
-            width: 126px;
-            height: 30px;
-            background-color: red;
-            border: none;
+    }
+    .cart {
+        width: 130px;
+        height: 36px;
+        border: 1px solid #cecece;
+        position: absolute;
+        top: -2px;
+        left: 510px;
+        cursor: pointer;
+        &:hover {
+            border-color: red;
+        }
+        i {
+            // display: inline-block;
+            width: 16px;
+            height: 18px;
+            font-size: 16px;
+            color: red;
             position: absolute;
-            top: 1px;
-            left: 360px;
+            top: -53px;
+            left: 15px;
+        }
+        p {
+            // display: inline-block;
+            font-size: 14px;
+            color: red;
+            margin-left: 8px;
+            position: absolute;
+            top: -53px;
+            left: 40px;
+        }
+    }
+}
+
+.ma_head {
+    width: 66px;
+    height: 66px;
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: -1px 1px 1px 1px #cecece;
+    img {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+
+/* 行列1 */
+
+.mid_head {
+    width: 460px;
+    height: 20px;
+    color: #999;
+    font-size: 12px;
+    position: relative;
+    margin-left: 210px;
+    margin-top: 10px;
+    a {
+        position: absolute;
+        top: -60px;
+        &:hover {
+            color: red;
+        }
+    }
+    a:nth-of-type(1) {
+        left: 5px;
+        color: red;
+    }
+    a:nth-of-type(2) {
+        left: 75px;
+    }
+    a:nth-of-type(3) {
+        left: 135px;
+    }
+    a:nth-of-type(4) {
+        left: 195px;
+    }
+    a:nth-of-type(5) {
+        left: 250px;
+    }
+    a:nth-of-type(6) {
+        left: 310px;
+    }
+    a:nth-of-type(7) {
+        left: 370px;
+    }
+    a:nth-of-type(8) {
+        left: 405px;
+    }
+}
+
+
+/* 行列2 */
+
+.under_head {
+    width: 762px;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 210px;
+    .under {
+        width: 762px;
+        height: 40px;
+        li {
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            text-align: center;
+            a {
+                color: #666;
+                font-size: 15px;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        li:nth-of-type(1) {
+            width: 50px;
+            a {
+                color: red;
+            }
+        }
+        li:nth-of-type(2) {
+            a {
+                color: red;
+            }
+        }
+        li:nth-of-type(5) {
+            width: 50px;
         }
     }
 }
