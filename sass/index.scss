@@ -19,7 +19,6 @@
         .flist {
             width: 58px;
             height: 30px;
-            line-height: 30px;
             /*  &:hover {
                 color: red;
             } */
@@ -27,9 +26,10 @@
                 display: inline-block;
                 width: 14px;
                 height: 15px;
-                border: 1px solid green;
+                font-size: 14px;
                 margin-left: 5px;
                 color: red;
+                margin-top: 7px;
             }
             span {
                 position: absolute;
@@ -67,7 +67,7 @@
 @mixin span {
     display: inline-block;
     margin-top: 6px;
-    margin-left: 9px;
+    // margin-left: 9px;
     color: #999;
     font-size: 12px;
 }
@@ -109,6 +109,7 @@
             @include a;
             width: 48px;
             height: 16px;
+            margin-right: 5px;
         }
         span {
             @include span;
@@ -117,12 +118,20 @@
     li:nth-of-type(3) {
         width: 77px;
         height: 30px;
-        margin-left: 10px;
+        // margin-left: 10px;
         a {
             @include a;
             width: 48px;
             height: 16px;
-            margin-right: 12px;
+            margin-right: 5px;
+        }
+        b {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+            margin-top: 6px;
+            border: 1px solid red;
         }
         span {
             @include span;
@@ -135,6 +144,7 @@
             @include a;
             width: 48px;
             height: 16px;
+            margin-right: 8px;
         }
         span {
             @include span;
@@ -143,13 +153,21 @@
     li:nth-of-type(5) {
         width: 77px;
         height: 30px;
-        margin-left: 10px;
+        // margin-left: 10px;
         a {
             @include a;
             width: 48px;
             height: 16px;
             color: red;
-            margin-right: 12px;
+            // margin-right: 12px;
+        }
+        b {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+            margin-top: 6px;
+            border: 1px solid red;
         }
         span {
             @include span;
@@ -162,20 +180,36 @@
             @include a;
             width: 48px;
             height: 16px;
-            margin-right: 12px;
+            // margin-right: 12px;
+        }
+        b {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+            margin-top: 6px;
+            border: 1px solid red;
         }
         span {
             @include span;
         }
     }
     li:nth-of-type(7) {
-        width: 77px;
+        width: 80px;
         height: 30px;
         a {
             @include a;
             width: 48px;
             height: 16px;
-            margin-right: 12px;
+            // margin-right: 12px;
+        }
+        b {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+            margin-top: 6px;
+            border: 1px solid red;
         }
         span {
             @include span;
