@@ -1,15 +1,25 @@
-#top_wrap {
+/* 外套 */
+
+#top_wrap,
+#header_wrap {
     width: 100%;
 }
 
-#top {
+
+/* 版心 */
+
+#top,
+#header {
     width: 990px;
     margin: 0 auto;
 }
 
+
+/* 顶部导航 */
+
 #top {
     height: 30px;
-    background-color: white;
+    background-color: #cecece;
     position: relative;
     .fl {
         width: 58px;
@@ -118,7 +128,10 @@
     li:nth-of-type(3) {
         width: 77px;
         height: 30px;
-        // margin-left: 10px;
+        &:hover {
+            border: 1px solid #999;
+            border-bottom: none;
+        }
         a {
             @include a;
             width: 48px;
@@ -222,6 +235,132 @@
             @include a;
             width: 48px;
             height: 16px;
+        }
+    }
+}
+
+
+/* 二级菜单（我的京东） */
+
+.uli {
+    margin-top: 7px;
+    display: none;
+    width: 250px;
+    height: 180px;
+    border: 1px solid #999;
+    background-color: white;
+    .uliup {
+        width: 200px;
+        height: 100px;
+        .uliup_lef {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            a {
+                width: 100px;
+                height: 100px;
+                color: #999;
+                font-size: 12px;
+                &:hover {
+                    color: red;
+                }
+            }
+            li:nth-of-type(3) {
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+        .uliup_rig {
+            float: left;
+            width: 90px;
+            height: 100px;
+            margin-top: 10px;
+            color: #999;
+            font-size: 12px;
+        }
+    }
+    .ulilow {
+        width: 250px;
+        height: 100px;
+        border-top: 1px solid #cecece;
+        .ulilow_lef {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            a {
+                width: 100px;
+                height: 100px;
+                color: #999;
+                font-size: 12px;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        .ulilow_rig {
+            float: left;
+            width: 90px;
+            height: 100px;
+            margin-top: 10px;
+            color: #999;
+            font-size: 12px;
+        }
+    }
+}
+
+
+/* 头部 */
+
+#header_wrap {
+    background-color: white;
+}
+
+#header {
+    height: 140px;
+    background-color: lightcyan;
+    line-height: 140px;
+    position: relative;
+    h1 {
+        width: 190px;
+        height: 120px;
+        position: absolute;
+        top: 9px;
+        img {
+            width: 190px;
+            height: 120px;
+        }
+    }
+    .search {
+        width: 486px;
+        height: 32px;
+        border: 2px solid red;
+        position: absolute;
+        top: 20px;
+        left: 220px;
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 360px;
+            height: 30px;
+            border: none;
+            color: #999;
+            font-size: 12px;
+            padding-left: 17px;
+        }
+        button {
+            width: 126px;
+            height: 30px;
+            background-color: red;
+            border: none;
+            position: absolute;
+            top: 1px;
+            left: 360px;
         }
     }
 }

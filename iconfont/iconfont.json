@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "29508",
+      "name": "相机",
+      "font_class": "camera",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "1243732",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "4474981",
+      "name": "放大镜",
+      "font_class": "fangdajing1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4694050",
+      "name": "放大镜",
+      "font_class": "fangdajing2",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11435029",
+      "name": "相机",
+      "font_class": "huabancopy",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
       "icon_id": "289483",
       "name": "QQ",
       "font_class": "qq",
