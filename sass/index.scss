@@ -257,7 +257,7 @@
     height: 180px;
     border: 1px solid #999;
     background-color: white;
-    // z-index: 99;
+    // z-index: 9999999;
     .uliup {
         width: 200px;
         height: 100px;
@@ -908,6 +908,9 @@
         p {
             width: 30px;
             height: 30px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
             margin-right: 15px;
             background-color: black;
             float: left;
@@ -969,6 +972,7 @@
             h5 {
                 width: 50px;
                 height: 53px;
+                font-weight: 700;
                 float: left;
             }
             h6 {

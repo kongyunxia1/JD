@@ -1,0 +1,206 @@
+body {
+    background-color: #cecece;
+}
+
+#detail_wrap {
+    width: 100%;
+    background-color: #cecece;
+}
+
+#detail {
+    width: 1210px;
+    height: 645px;
+    margin: 10px auto;
+    background-color: white;
+    #fdj {
+        width: 350px;
+        height: 350px;
+        float: left;
+    }
+    .formabox {
+        width: 590px;
+        height: 590px;
+        margin-left: 30px;
+        margin-right: 24px;
+        float: left;
+    }
+}
+
+
+/* 详情图 */
+
+.small {
+    width: 350px;
+    height: 350px;
+    border: 1px solid green;
+    margin-bottom: 20px;
+    img {
+        width: 350px;
+        height: 350px;
+    }
+    .mask {
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 0, 0.3);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+        cursor: move;
+    }
+}
+
+.big {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 400px;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+    margin-top: 10px;
+    margin-left: -20px;
+    .big-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+/* 商品详情信息 */
+
+.formabox {
+    h4 {
+        width: 550px;
+        height: 54px;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: rgb(104, 103, 103);
+    }
+    .price {
+        width: 525px;
+        height: 42px;
+        padding-bottom: 5px;
+        background-color: #ebebeb;
+        margin-left: 20px;
+        padding-right: 20px;
+        // border-bottom: 1px solid #cecece;
+        p {
+            width: 48px;
+            height: 22px;
+            margin-left: 10px;
+            font-size: 12px;
+            color: #999;
+            float: left;
+            margin-top: 15px;
+        }
+        span {
+            display: block;
+            width: 16px;
+            height: 20px;
+            font-size: 16px;
+            color: red;
+            float: left;
+            margin-top: 11px;
+            margin-left: 5px;
+        }
+        b {
+            display: block;
+            color: red;
+            font-weight: 600;
+            font-size: 20px;
+            float: left;
+            margin-top: 9px;
+            margin-left: 5px;
+        }
+        a {
+            display: block;
+            float: left;
+            font-size: 12px;
+            color: rgb(10, 76, 163);
+            margin-top: 17px;
+            margin-left: 10px;
+            &:hover {
+                color: red;
+            }
+        }
+        i {
+            display: block;
+            float: left;
+            margin-left: 250px;
+            margin-top: 6px;
+            width: 1px;
+            height: 35px;
+            border-right: 1px solid #999;
+        }
+        strong {
+            display: block;
+            float: left;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 455px;
+            color: #999;
+            margin-top: -35px;
+        }
+    }
+}
+
+.add {
+    width: 570px;
+    height: 46px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    .num {
+        width: 60px;
+        height: 46px;
+        border: 1px solid #cecece;
+        position: relative;
+        input {
+            width: 47px;
+            height: 44px;
+            border: none;
+            background-color: white;
+            text-align: center;
+            line-height: 44px;
+        }
+        a {
+            width: 17px;
+            height: 21px;
+            display: block;
+            border: 1px solid #cecece;
+            text-align: center;
+            line-height: 20px;
+            color: #999;
+            background-color: #f0eeee;
+            position: absolute;
+            border-right: 0;
+            right: 0;
+        }
+        a:nth-of-type(1) {
+            top: 0;
+        }
+        a:nth-of-type(2) {
+            bottom: 0;
+        }
+        button {
+            border: none;
+            width: 180px;
+            height: 47px;
+            padding: 0 26px;
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: -1px;
+            left: 70px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+}

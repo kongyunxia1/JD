@@ -5,6 +5,7 @@ $(".login_lef").click(function() {
     $(".login_rig").find("a").css({ "color": "#666" })
 })
 
+
 $(".login_rig").click(function() {
     $(".malogin").css({ "display": "none" })
     $(".ZH_login").css({ "display": "block" })
