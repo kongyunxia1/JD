@@ -10,6 +10,11 @@ function swiper() {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -19,4 +24,31 @@ function swiper() {
             prevEl: '.swiper-button-prev',
         },
     });
+}
+
+/* $(".SPlist").hover(function() {
+
+    $(".opca").css({ "display": "block" })
+}, function() {
+    $(".opca").css({ "display": "none" })
+}) */
+
+function hover() {
+    var aLi = document.querySelectorAll(".SP")
+    var aOpca = document.querySelectorAll(".opca")
+        // console.groupCollapsed(aLi)
+    for (let i = 0; i < aLi.length; i++) {
+        aLi[i].onmouseover = function() {
+            for (let j = 0; j < aOpca.length; j++) {
+                aOpca[i].style.display = "block";
+            }
+        }
+    }
+    for (let i = 0; i < aLi.length; i++) {
+        aLi[i].onmouseout = function() {
+            for (let j = 0; j < aOpca.length; j++) {
+                aOpca[i].style.display = "none";
+            }
+        }
+    }
 }
