@@ -5,7 +5,8 @@
 #main_wrap,
 #case_wrap,
 #PD_wrap,
-#TJ_wrap {
+#TJ_wrap,
+#footer_wrap {
     width: 100%;
 }
 
@@ -17,7 +18,8 @@
 #main,
 #case,
 #PD,
-#TJ {
+#TJ,
+#footer {
     width: 990px;
     margin: 0 auto;
 }
@@ -422,8 +424,8 @@
             top: -53px;
             left: 15px;
         }
-        p {
-            // display: inline-block;
+        a {
+            display: block;
             font-size: 14px;
             color: red;
             margin-left: 8px;
@@ -557,7 +559,6 @@
         width: 590px;
         height: 470px;
         float: left;
-        background-color: wheat;
         margin-left: 10px;
         margin-right: 10px;
         .swiper-slide {
@@ -768,10 +769,11 @@
             float: right;
             width: 12px;
             height: 12px;
-            border: 1px solid black;
+            font-size: 10px;
+            color: #999;
             position: absolute;
             top: 4px;
-            right: 2px;
+            right: 5px;
         }
     }
 }
@@ -864,8 +866,12 @@
         width: 170px;
         height: 240px;
         padding: 10px;
-        background-color: yellow;
+        background-color: white;
         float: left;
+        img {
+            width: 165px;
+            height: 240px;
+        }
     }
 }
 
@@ -923,6 +929,16 @@
 
 
 /* 中间轮播 */
+
+.case_mid {
+    img {
+        display: inline-block;
+        width: 200px;
+        height: 260px;
+        margin: 0;
+        padding: 0;
+    }
+}
 
 
 /* 右边轮播 */
@@ -1022,7 +1038,7 @@
 /* 为你推荐 */
 
 #TJ {
-    height: 1000px;
+    height: 1220px;
     margin-top: 20px;
     h3 {
         width: 990px;
@@ -1110,7 +1126,7 @@
     .SPUl_list {
         width: 990px;
         height: 1100px;
-        background-color: #cecece;
+        // background-color: #cecece;
         // float: left;
         margin-right: 10px;
         display: flex;
@@ -1119,7 +1135,6 @@
         .SPlist {
             width: 190px;
             height: 260px;
-            border: 1px solid red;
             background-color: white;
             .SP {
                 width: 190px;
@@ -1189,5 +1204,16 @@
                 }
             }
         }
+    }
+}
+
+#footer {
+    height: 500px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    img {
+        width: 990px;
+        height: 500px;
     }
 }

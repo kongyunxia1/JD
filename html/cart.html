@@ -12,18 +12,22 @@
 <body>
     <input type="checkbox" id="checkAll">全选
     <ul id="cartList">
-        <div class="totalPrice">
-            0
-        </div>
+
     </ul>
+    <div id="total">
+        商品总价：
+        <span id="totalPrice">
+            0
+        </span>元
+    </div>
 
 
     <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
         window.onload = function() {
+
             var cart = new Cart();
             cart.showData("cartList");
-
 
         }
     </script>

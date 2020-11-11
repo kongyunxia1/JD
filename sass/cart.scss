@@ -1,6 +1,10 @@
+body {
+    position: relative;
+}
+
 #cartList {
     width: 990px;
-    height: 900px;
+    height: 1000px;
     li {
         width: 990px;
         height: 100px;
@@ -32,11 +36,12 @@
             line-height: 20px;
             border: 1px solid black;
             margin-top: 5px;
+            cursor: pointer;
         }
         span:nth-of-type(3) {
             margin-left: 150px;
         }
-        input:nth-of-type(2) {
+        input:nth-of-type(1) {
             display: inline-block;
             width: 30px;
             height: 18px;
@@ -66,6 +71,18 @@
             line-height: 30px;
             text-align: center;
             border: 1px solid #a3a3a3;
+            cursor: pointer;
         }
     }
+}
+
+#total {
+    width: 100%;
+    height: 50px;
+    background-color: oldlace;
+    position: sticky;
+    bottom: 0;
+    color: red;
+    line-height: 50px;
+    text-align: center;
 }

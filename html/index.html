@@ -26,8 +26,8 @@
 
             <ul class="fr">
                 <li>
-                    <a href="#(login.html)" target="_blank">你好，请登录</a>
-                    <a href="#(register.html)">免费注册</a>
+                    <a href="../html/login.html" target="_blank">你好，请登录</a>
+                    <a href="../html/register.html">免费注册</a>
                     <span>|</span>
                 </li>
                 <li>
@@ -104,17 +104,12 @@
                         <input type="text" value="冬季女装">
                         <i class="iconfont icon-huabancopy"></i>
                     </div>
-                    <!-- <div class="in">
-                        <img src="../img/logo-201305-b.png" alt="京东狗">
-                        <input type="text" value="冬季女装">
-                        <i class="iconfont icon-huabancopy"></i>
-                    </div> -->
                     <button>
                         <i class="iconfont icon-fangdajing2"></i>
                     </button>
                     <div class="cart">
                         <i class="iconfont icon-gouwuche"></i>
-                        <p>我的购物车</p>
+                        <a href="../html/cart.html">我的购物车</a>
                     </div>
                 </div>
             </div>
@@ -124,14 +119,14 @@
             </div>
             <!-- 行列1 -->
             <div class="mid_head">
-                <a href="#(https://pro.jd.com/mall/active/2gS1q887uHWPnYh68d51bJDrqGxB/index.html)">一元限量抢</a>
-                <a href="#(https://prodev.jd.com/mall/active/UpECYEqYYzjh4o54RCztHC8Qk68/index.html)">服饰预售</a>
-                <a href="#(https://pro.jd.com/mall/active/4PFuxEwNrLVGkuLLGGr4PCfN7ht5/index.html)">美妆大牌</a>
-                <a href="#(https://prodev.jd.com/mall/active/3qsMEXEwYkKSxkJVyTvidyovNsBV/index.html)">低至1元</a>
-                <a href="#(https://pro.jd.com/mall/active/uLNgRfv3pLVrPahjPZ63KehXioc/index.html)">威猛先生</a>
-                <a href="#(https://prodev.jd.com/mall/active/s9vCAFQyPvoWF1JtUto7QbDugJm/index.html)">放心联盟</a>
-                <a href="#(https://prodev.jd.com/mall/active/3a7Z5WcSsX4rivcKouqbqpxWUhfh/index.html?babelChannel=pcshouyesousuokuangwaiBIguanjianci)">精华</a>
-                <a href="#(https://prodev.jd.com/mall/active/2fMPXz7EhXPWS14u8mJaLY72Fa8b/index.html)">爆款相机</a>
+                <a href="#">一元限量抢</a>
+                <a href="#">服饰预售</a>
+                <a href="#">美妆大牌</a>
+                <a href="#">低至1元</a>
+                <a href="#">威猛先生</a>
+                <a href="#">放心联盟</a>
+                <a href="#">精华</a>
+                <a href="#">爆款相机</a>
             </div>
             <!-- 行列2 -->
             <div class="under_head">
@@ -347,7 +342,7 @@
                     <div class="main_rigmidhead">
                         <h5>京东快报</h5>
                         <a href="#">更多</a>
-                        <i class="iconfont "></i>
+                        <i class="iconfont icon-jianjiaohaoyou"></i>
                     </div>
                     <div class="main_rigmidmid">
                         <ul>
@@ -461,14 +456,38 @@
             </a>
             <!-- 中间轮播 -->
             <div class="case_mid">
-
+                <img src="../img/SP5.webp" alt="">
+                <img src="../img/SP6.webp" alt="">
+                <img src="../img/SP1.webp" alt="">
             </div>
+
+
+
             <!-- 右边轮播 -->
             <div class="case_rig">
-
+                <img src="../img/SP8.webp" alt="">
             </div>
         </div>
     </div>
+    <!-- 中间-轮播 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
 
     <!-- 频道广场 -->
     <div id="PD_wrap">
@@ -497,62 +516,62 @@
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>生鲜馆</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD7.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD9.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>京超市</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD5.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD6.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>寻宝</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD7.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD8.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>国际</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD9.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD10.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>新机发</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD11.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD12.webp" alt="商品2">
                         </span>
                     </div>
                 </div>
@@ -560,122 +579,122 @@
                 <div class="PD_caserig">
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>京金融</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD13.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD14.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>汽车</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD15.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD16.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>新京造</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD17.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD18.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>饮料</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD19.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD20.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>家装城</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD6.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD8.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>电脑</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD10.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD5.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>健康</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD10.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD14.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>名酒</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD15.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD18.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
+                            <h5>数码</h5>
                             <h6>一站式企业采购平台</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD4.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD9.webp" alt="商品2">
                         </span>
                     </div>
                     <div>
                         <a>
-                            <h5>企业购</h5>
-                            <h6>一站式企业采购平台</h6>
+                            <h5>工业品</h5>
+                            <h6>一站式企业</h6>
                         </a>
                         <span>
-                            <img src="../img/PD3.webp" alt="商品1">
+                            <img src="../img/PD16.webp" alt="商品1">
                         </span>
                         <span>
-                            <img src="../img/PD4.webp" alt="商品2">
+                            <img src="../img/PD20.webp" alt="商品2">
                         </span>
                     </div>
                 </div>
@@ -751,6 +770,29 @@
     </div>
 
 
+    <!-- footer -->
+    <div id="footer_wrap">
+        <div id="footer">
+            <img src="../img/footer.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="../js/jquery-1.11.0.js"></script>
     <script src="../js/swiper.js"></script>
     <script src="../js/index.js"></script>
@@ -814,6 +856,8 @@
         swiper();
         hover();
     </script>
+
+
 </body>
 
 </html>

@@ -20,17 +20,17 @@ class Fdj {
 
             // 小图宽/小遮罩宽 = 大图宽/大遮罩宽
             // 大遮罩宽*小图宽/小遮罩宽 = 大图宽
-            console.log(this.big.offsetWidth); //0
-            console.log(this.small.offsetWidth);
-            console.log(this.mask.offsetWidth); //0
+            //console.log(this.big.offsetWidth); //0
+            //console.log(this.small.offsetWidth);
+            //console.log(this.mask.offsetWidth); //0
             let bigImgWidth = this.big.offsetWidth * this.small.offsetWidth / this.mask.offsetWidth
-            console.log(bigImgWidth);
+                //console.log(bigImgWidth);
 
             this.bigImg.style.width = bigImgWidth + 'px'
 
             //鼠标 在 small 上的移动
             this.small.onmousemove = (e) => {
-                console.log(e)
+                // console.log(e)
                 let maskX = e.pageX - this.mask.offsetWidth / 2 - 20;
                 let maskY = e.pageY - this.mask.offsetWidth / 2 - 10;
 
