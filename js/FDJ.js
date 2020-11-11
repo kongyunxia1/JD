@@ -3,6 +3,8 @@ class Fdj {
 
         // 定义变量
         this.el = document.querySelector(obj.el);
+        console.log(this.el) //null
+
         this.small = this.el.querySelector('.small')
         this.mask = this.el.querySelector('.mask')
         this.big = this.el.querySelector('.big')

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>购物车列表</title>
+
+    <link rel="stylesheet" href="../css/cart.css">
+
+</head>
+
+<body>
+    <input type="checkbox" id="checkAll">全选
+    <ul id="cartList">
+        <div class="totalPrice">
+            0
+        </div>
+    </ul>
+
+
+    <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var cart = new Cart();
+            cart.showData("cartList");
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1107,21 +1107,25 @@
 /* 商品 */
 
 .TJ_content {
-    ul {
+    .SPUl_list {
         width: 990px;
-        height: 820px;
+        height: 1100px;
+        background-color: #cecece;
+        // float: left;
+        margin-right: 10px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        li {
+        .SPlist {
             width: 190px;
             height: 260px;
+            border: 1px solid red;
             background-color: white;
             .SP {
                 width: 190px;
                 height: 260px;
                 position: relative;
-                div {
+                .content_img {
                     width: 120px;
                     height: 120px;
                     margin: 25px 35px;
@@ -1137,11 +1141,6 @@
                     padding: 5px 10px;
                     color: #666;
                     font-size: 12px;
-                }
-                p:nth-of-type(2) {
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
                 }
                 .price {
                     width: 190px;
@@ -1162,8 +1161,8 @@
                     height: 60px;
                     background-color: white;
                     position: absolute;
-                    top: 175px;
-                    left: -35px;
+                    top: 195px;
+                    left: 0px;
                     .opca_p {
                         width: 90px;
                         height: 25px;

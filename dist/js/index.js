@@ -26,17 +26,12 @@ function swiper() {
     });
 }
 
-/* $(".SPlist").hover(function() {
-
-    $(".opca").css({ "display": "block" })
-}, function() {
-    $(".opca").css({ "display": "none" })
-}) */
 
 function hover() {
     var aLi = document.querySelectorAll(".SP")
     var aOpca = document.querySelectorAll(".opca")
-        // console.groupCollapsed(aLi)
+    console.log(aLi);
+    console.log(aOpca);
     for (let i = 0; i < aLi.length; i++) {
         aLi[i].onmouseover = function() {
             for (let j = 0; j < aOpca.length; j++) {

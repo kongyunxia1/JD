@@ -82,11 +82,11 @@
                 <div class="ZH_login">
                     <div class="one_login">
                         <label for="" class="iconfont icon-yonghuming"></label>
-                        <input type="text" placeholder="邮箱/用户名/登录手机">
+                        <input class="ipt1" type="text" placeholder="邮箱/用户名/登录手机">
                     </div>
                     <div class="two_login">
                         <label for="" class="iconfont icon-mima1"></label>
-                        <input type=" text " placeholder="密码 ">
+                        <input class="ipt2" type=" text " placeholder="密码 ">
                     </div>
                     <div class="mima ">
                         <a href="# ">忘记密码</a>
@@ -113,7 +113,7 @@
                         </li>
                         <li>
                             <i class="iconfont icon-xiayiyeqianjinchakangengduo-yuankuang "></i>
-                            <a href="# ">立即注册</a>
+                            <a href="../html/register.html ">立即注册</a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +121,33 @@
             </div>
         </div>
     </div>
+    <script src="../js/axios.min.js"></script>
+    <script>
+        let api = "http://jx.xuzhixiang.top/ap/api/login.php";
+        let ipts = document.querySelectorAll("input");
+        let btn = document.querySelector("button");
 
+        btn.onclick = function() {
+            //获取输入框的值
+            let username = ipts[0].value;
+            let password = ipts[1].value;
+            //发起请求
+            axios.get(api, {
+                pramas: {
+                    username,
+                    password
+                }
+            }).then(function(res) {
+                //服务器返回的数据
+                console.log(res.data);
+                if (res.data.code == 1) {
+                    alert(res.data.msg);
+                    location.href = "../html/index.html"
+                }
+            })
+
+        }
+    </script>
 
 
 
@@ -152,6 +178,8 @@
     <script src="../js/jquery-1.11.0.js "></script>
     <script src="../js/login.js "></script>
     <script src="../js/iconfont.js "></script>
+
+
 </body>
 
 
