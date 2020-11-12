@@ -47,3 +47,30 @@ function hover() {
         }
     }
 }
+
+
+
+
+$(".ti_one").click(function() {
+    $("html,body").stop().animate({
+        "scrollTop": 500
+    }, 500);
+})
+$(".ti_two").click(function() {
+    $("html,body").stop().animate({
+        "scrollTop": 800
+    }, 500);
+})
+$(".ti_the").click(function() {
+
+    $("html,body").stop().animate({
+        "scrollTop": 1500
+    }, 500);
+})
+
+
+$("#ti a:last").click(function() {
+    $("html,body").stop().animate({
+        "scrollTop": 0
+    }, 500);
+})

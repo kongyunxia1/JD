@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "15903310",
+      "name": "尖角号上",
+      "font_class": "jianjiaohaoshang",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "15970531",
+      "name": "尖角号",
+      "font_class": "arrow_down1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
       "icon_id": "517432",
       "name": "用户名",
       "font_class": "yonghuming",
