@@ -64,9 +64,7 @@
         console.log(product) //商品信息
 
         let oDetail = document.getElementById("detail")
-        oDetail.innerHTML = `
-            
-           
+        oDetail.innerHTML = `           
                 <div id="fdj">
                     <div class="small">
                         <img src="${product.img}" />
@@ -131,7 +129,7 @@
             }
         }
 
-
+        localStorage.setItem(JSON.stringify("product"))
 
         new Fdj({
             el: "#fdj"

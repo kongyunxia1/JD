@@ -62,8 +62,6 @@ Cart.prototype.showData = function(id) {
         console.log(i)
         console.log(this.list[i])
         let id = this.list[i].getAttribute("data-id");
-        console.log(id)
-        console.log(this.oCartList)
         this.oCartList.removeChild(this.list[i]); //删节点
         this.cks[i].checked = false;
         this.cks[i].style.display = "none";
@@ -128,10 +126,13 @@ Cart.prototype.showData = function(id) {
             this.getTotalPrice();
             this.removeData(i);
         }
-        return false;
+
     }
 
 }
+
+
+
 Cart.prototype.updateData = function(i) {
     //改单个总价
     this.perTotalPrice[i].innerText = this.otxt[i].value * this.perPrice[i].innerText
