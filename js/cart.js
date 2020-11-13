@@ -7,10 +7,13 @@ function Cart() {
 }
 
 Cart.prototype.saveData = function(id, num, ter) {
+
     //ter 表示是否为最终值，true 表示为最终值
     if (this.cartDatas[id] === undefined || true) {
+
         this.cartDatas[id] = num;
     } else {
+
         this.cartDatas[id] += num;
     }
     localStorage.setItem("cartDatas", JSON.stringify(this.cartDatas));
@@ -24,8 +27,8 @@ Cart.prototype.showData = function(id) {
 
     var str = "";
     for (let id in this.cartDatas) {
-        //console.log(this.cartDatas[id]) //1
-        // console.log(productDatas[id].title);
+        console.log(this.cartDatas[id]) //1
+            // console.log(productDatas[id].title);
         str += `
         <input type="checkbox" class="ck">
 		<li data-id="${id}" class = "list">
@@ -38,7 +41,7 @@ Cart.prototype.showData = function(id) {
             <span class="plus">+</span>
             <span>总价</span>
 			<span class="perTotalPrice">${productDatas[id].price * this.cartDatas[id]}</span>
-			<span class="del" >删除</span>	
+			<span class="del">删除</span>	
 		</li>`
     }
 
@@ -156,3 +159,15 @@ Cart.prototype.getTotalPrice = function() {
     }
     totalPrice.innerText = price;
 }
+
+/* Cart.prototype.removeData = (i => {
+
+    console.log(i)
+    console.log(this.list[i])
+    let id = this.list[i].getAttribute("data-id");
+    this.oCartList.removeChild(this.list[i]); //删节点
+    this.cks[i].checked = false;
+    this.cks[i].style.display = "none";
+    delete this.cartDatas[id]; //删数据
+    localStorage.setItem("cartDatas", JSON.stringify(this.cartDatas));
+}) */

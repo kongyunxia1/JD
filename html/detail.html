@@ -11,34 +11,35 @@
 
 <body>
     <div id="detail_wrap">
+
         <div id="detail">
             <!-- 详情图 -->
-            <!-- <div id="fdj">
-                <div class="small">
-                    <img src="../img/dnum.png" />
-                    <div class="mask"></div>
+            <!-- <div id=" fdj ">
+                <div class="small ">
+                    <img src="../img/dnum.png " />
+                    <div class="mask "></div>
                 </div>
 
-                <div class="big">
-                    <img class="big-img" src="../img/dnum.png" />
+                <div class="big ">
+                    <img class="big-img " src="../img/dnum.png " />
                 </div>
             </div> -->
             <!-- 商品详情信息 -->
-            <!-- <div class="formabox">
+            <!-- <div class="formabox ">
                 <h4>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h4>
-                <div class="price">
+                <div class="price ">
                     <p>京&nbsp;东&nbsp;价</p>
                     <span>￥</span>
-                    <b class="pprice">88.8</b>
-                    <a href="#">降价通知</a>
+                    <b class="pprice ">88.8</b>
+                    <a href="# ">降价通知</a>
                     <i></i>
                     <strong>累积评价</strong>
                 </div>
-                <div class="add">
-                    <div class="num">
-                        <input type="text" value="1">
-                        <a href="#">+</a>
-                        <a href="#">-</a>
+                <div class="add ">
+                    <div class="num ">
+                        <input type="text " value="1 ">
+                        <a href="# ">+</a>
+                        <a href="# ">-</a>
                         <button>加入购物车</button>
                     </div>
                 </div>
@@ -47,13 +48,13 @@
     </div>
 
 
-    <script src="../js/axios.min.js"></script>
-    <script src="../js/FDJ.js"></script>
+    <script src="../js/axios.min.js "></script>
+    <script src="../js/FDJ.js "></script>
     <script>
-        axios.get("http://localhost:3000/db").then(res => {
+        axios.get("http://localhost:3000/db ").then(res => {
             console.log(res.data) //json数据
             var Data1 = res.data;
-            localStorage.setItem("Data", JSON.stringify(Data1))
+            localStorage.setItem("Data ", JSON.stringify(Data1))
         })
 
         var id = location.search.split("=")[1];
@@ -63,16 +64,18 @@
         let product = productData[id];
         console.log(product) //商品信息
 
+
+
         let oDetail = document.getElementById("detail")
         oDetail.innerHTML = `           
                 <div id="fdj">
                     <div class="small">
-                        <img src="${product.img}" />
-                        <div class="mask"></div>
+                        <img src="${product.img} " />
+                        <div class="mask "></div>
                     </div>
 
                     <div class="big">
-                        <img class="big-img" src="${product.img}" />
+                        <img class="big-img" src="${product.img} " />
                     </div>
                 </div>
             
@@ -88,7 +91,7 @@
                     </div>
                     <div class="add">
                         <div class="num">
-                            <input type="text" value="1" class="nums">
+                            <input type="text" value="1 " class="nums ">
                             <a href="#" class="plus">+</a>
                             <a href="#" class="minus">-</a>
                             <button>加入购物车</button>
@@ -97,16 +100,37 @@
                 </div>
         
 			`
+
         var addBtn = document.querySelector("button");
+
         addBtn.onclick = function() {
+
             location.href = "../html/cart.html";
         }
 
+
+        /* var cart = new Cart();
+        var aAs = document.querySelectorAll(".SP");
+        console.log(aAs) */
+        /* for (let i = 0; i < aAs.length; i++) {
+            aAs[i].onclick = function() {
+                var id = this.getAttribute("data-id");
+                cart.saveData(id, 1);
+            } */
+
+
+
+
+
+
+
+        /* --------------------------------------------------- */
         var minus = document.querySelector(".minus");
         var add = document.querySelector(".plus");
         var otxt = document.querySelector(".nums");
+        console.log(otxt)
 
-        //"减"按钮
+        //"减 "按钮
         minus.onclick = function() {
             if (otxt.value <= 1) {
                 otxt.value = 1;
@@ -117,22 +141,22 @@
 
         }
 
-        //"加"按钮
+        //"加 "按钮
         add.onclick = function() {
                 otxt.value++;
             }
-            //"文本框"内容设置
+            //"文本框 "内容设置
         otxt.onchange = function() {
             if (otxt.value <= 1) {
                 otxt.value = 1;
-                alert("宝贝不能少于一件哦")
+                alert("宝贝不能少于一件哦 ")
             }
         }
 
-        localStorage.setItem(JSON.stringify("product"))
+
 
         new Fdj({
-            el: "#fdj"
+            el: "#fdj "
         })
     </script>
 
